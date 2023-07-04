@@ -44,6 +44,9 @@ Query 1
 ```
 query = "List all the different types of SQL Injections"
 -----
+
+Output:
+
 The different types of SQL injections are:
 
 In-band SQLi (Classic SQLi)
@@ -58,6 +61,9 @@ Query 2
 ```
 query = "List all the SQL Injection Vulnerability Scanner Tools"
 -----
+
+Output:
+
 Here is a list of SQL Injection Vulnerability Scanner Tools:
 
 SQLMap - Automatic SQL Injection And Database Takeover Tool
@@ -77,6 +83,9 @@ Query 3
 ```
 query = "List some Generic Time Based SQL Injection Payloads"
 -----
+
+Output:
+
 Here are some examples of generic time-based SQL injection payloads:
 
 1. sleep(5)#
@@ -108,6 +117,9 @@ Query 4
 ```
 query = "List some Generic Union Select Payloads"
 ----
+
+Output:
+
 Here are some examples of generic Union Select payloads that can be used in SQL injection attacks:
 
 1. , (select * from (select(sleep(10)))a)
@@ -120,6 +132,9 @@ Query 5
 ```
 query = "List some Generic UNION SELECT Payloads"
 ----
+
+Output:
+
 Here are some examples of generic UNION SELECT payloads:
 
 UNION ALL SELECT 'INJ'||'ECT'||'XXX',2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18#
@@ -140,3 +155,4 @@ These payloads can be used to test for SQL injection vulnerabilities by injectin
 ### Improvements
 - [ ] Fine-tune the LLM to mitigate the Query 4 and Query 5 issue
 - [ ] Evaluate the LLM using Manual and LLM evaluation methods
+- [ ] Try different LLM vendors
