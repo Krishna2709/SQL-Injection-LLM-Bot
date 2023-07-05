@@ -151,8 +151,11 @@ These payloads can be used to test for SQL injection vulnerabilities by injectin
 ### Observations
 1. Query 4 and Query 5 are the same but the LLM considered the SQL commands strictly.
 2. The LLM returned Generic Time Based SQL Injection Payloads for the Query 4: List some Generic Union Select Payloads
+3. The generic embeddings may not be able to capture the meaning of domain-specific knowledge
 
 ### Improvements
-- [ ] Fine-tune the LLM to mitigate the Query 4 and Query 5 issue
+- [ ] Fine-tune the LLM to mitigate the Query 4 and Query 5 issue:
+- [ ]     1. Try own embedding model
+- [ ]     2. Combine with classic search algorithms: keywords, Tf-Idf....
 - [ ] Evaluate the LLM using Manual and LLM evaluation methods
 - [ ] Try different LLM vendors
