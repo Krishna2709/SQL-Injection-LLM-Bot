@@ -14,6 +14,7 @@ from dotenv import load_dotenv, find_dotenv
 
 _ = load_dotenv(find_dotenv())  # read local .env file
 
+os.environ['FAISS_NO_AVX2'] = '1'
 
 def load_vectorstore():
     embeddings = OpenAIEmbeddings()
